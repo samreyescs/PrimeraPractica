@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Biografía | Contacto</title> <!-- Texto que aparece en la pestaña de la página -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+    <ul id="nav">
+        <div class="list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="form.html">Contacto</a></li>
+            <li><a href="legal/legal.html">Legal</a></li>
+        </div>
+    </ul>
+
+    <h1>Contacto</h1>
+
+    <form action="procesa.html" method="POST">
+        <!-- Dirigir a dónde enviamos lla información que el formulario envia-->
+        <label for="nombre" hidden>Nombre</label>
+        <input type="text" name="nombre" placeholder="Escribe tu nombre">
+
+        <br>
+
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" value="" required>
+
+        <br>
+
+        <label for="sexo">Sexo</label>
+        <input type="radio" name="sexo" value="F" checked>Femenino
+        <input type="radio" name="sexo" value="M">Masculino
+
+        <br>
+
+        <input type="checkbox" name="boletin" value="1" checked>
+        <label for="boletin">Recibir boletín</label>
+
+        <br>
+
+        <label for="carrera">Carrera</label>
+        <select name="carrera">
+            <option value="">Selecciona tu carrera</option>
+            <option value="info">Ing. Informática</option>
+            <option value="comp">Ing. Computación</option>
+            <option value="cel" selected>Ing. Com. Electrónica</option>
+        </select>
+
+        <br>
+
+        <label for="psw">Contraseña</label>
+        <input type="password" name="psw">
+
+        <br>
+
+        <label for="promedio">Promedio</label>
+        <input type="number" name="promedio" min="60" max="100">
+
+        <br>
+
+        <label for="comentario">Comentario</label><br>
+        <textarea name="comentario" cols="50" rows="10"></textarea>
+
+        <br>
+
+        <label for="nacimiento">Fecha Nacimiento</label>
+        <input type="date" name="nacimiento">
+
+        <br>
+
+        <input type="hidden" name="escondido" value="hola"> <!-- El usuario no lo puede ver sin embargo aparece en código fuente -->
+
+        <button type="submit">Enviar</button>
+        <input type="submit" value="Enviar con input">
+        <input type="reset" value="Limpiar">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+body {
+    background-color: cadetblue; /* Se puede especificar con valores hexadecimales, rgb, hsl, etc */  
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h3 {
+    color: blanchedalmond;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+p {
+    
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 5px;
+    margin: 50px 100px;
+    padding: 10px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: crimson;
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: square;
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    height: 50px;
+    background-color: darkcyan;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+img {
+    float: right;
+    clear: right;
+}
+
+#inicio {
+    text-align: center;
+    font-style: italic;
+}
+
+#bio {
+    text-align: right;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkcyan;
+    
+    
+}
+
+.list > li > a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.importante {
+    text-decoration: underline;
+}
+
+.subtema {
+    color: blanchedalmond;
+    text-decoration: underline;
+}
